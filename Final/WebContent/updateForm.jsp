@@ -32,7 +32,7 @@
    <input type=text name=productType value="${product.productType}" />
    <br />
    <label>
-      Product Flavor:
+      Product description:
    </label>
    <input type=text name=description value="${product.description}" />
    <br />
@@ -48,6 +48,12 @@
    </label>
    <input type=text name=price value="${product.price}" />
    <br />
+   <label>
+      image name:
+   </label>
+   <input type=text name=imagename value="${product.imageName}" />
+   <br />
+   
    
    <label>
       Product Quantity:

@@ -15,7 +15,7 @@ import dbhelpers.ReadRecord;
 /**
  * Servlet implementation class UpdateFormServlet
  */
-@WebServlet(description = "This will get a book and use the data to fill in a table for updating the record", urlPatterns = { "/update" })
+@WebServlet(description = "This will get a product and use the data to fill in a table for updating the record", urlPatterns = { "/update" })
 public class UpdateFormServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -44,7 +44,7 @@ public class UpdateFormServlet extends HttpServlet {
 		// create ReadRecord class
 		ReadRecord rr = new ReadRecord("final", "root", "Headbanger#1", sku);
 		
-		// Use ReadRecord to get the book data
+		// Use ReadRecord to get the product data
 		rr.doRead();
 		
 		Product product = rr.getProduct();

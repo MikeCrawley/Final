@@ -41,16 +41,18 @@ public class AddServlet extends HttpServlet {
 		// get the data
 		String sku = request.getParameter("sku");
 		String productType = request.getParameter("productType");
+		String imageName = request.getParameter("imageName");
 	    String description = request.getParameter("description");
 	    Double cost = Double.parseDouble(request.getParameter("cost"));
 	    Double price = Double.parseDouble(request.getParameter("price"));
 	    int quantity = Integer.parseInt(request.getParameter("quantity"));
 	
-		// set up a book object
+		// set up a product object
 	    Product product = new Product();
 	    product.setSku(sku);
 	    product.setProductType(productType);
 	    product.setDescription(description);
+	    product.setImageName(imageName);
 	    product.setCost(cost);
 	    product.setPrice(price);
 	    product.setQuantity(quantity);

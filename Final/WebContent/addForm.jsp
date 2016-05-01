@@ -27,7 +27,7 @@
    <input type=text name=productType value="" />
    <br />
    <label>
-      Product Flavor:
+      Product Description:
    </label>
    <input type=text name=description value="" />
    <br />
@@ -43,7 +43,11 @@
    </label>
    <input type=text name=price value="" />
    <br />
-   
+    <label>
+      image name:
+   </label>
+   <input type=text name=imagename value="" />
+   <br />
    <label>
       Product Quantity:
    </label>

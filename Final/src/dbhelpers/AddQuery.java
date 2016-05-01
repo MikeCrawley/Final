@@ -32,7 +32,7 @@ public class AddQuery {
 	}
 	
 	public void doAdd(Product product){
-		String query = "insert into final.products (sku, productType, description, cost, price, quantity) values (?, ?, ?, ?, ?, ?)";
+		String query = "insert into final.products (sku, productType, description, imageName, cost, price, quantity) values (?, ?, ?, ?, ?, ?, ?)";
 		
 		try {
 			PreparedStatement ps = connection.prepareStatement(query);
@@ -40,9 +40,10 @@ public class AddQuery {
 			ps.setString(1, product.getSku());
 			ps.setString(2, product.getProductType());
 			ps.setString(3, product.getDescription());
-			ps.setDouble(4, product.getCost());
-			ps.setDouble(5, product.getPrice());
-			ps.setInt(6, product.getQuantity());
+			ps.setString(4, product.getImageName());
+			ps.setDouble(5, product.getCost());
+			ps.setDouble(6, product.getPrice());
+			ps.setInt(7, product.getQuantity());
 			
 			ps.executeUpdate();
 			

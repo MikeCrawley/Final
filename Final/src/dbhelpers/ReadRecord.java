@@ -25,7 +25,7 @@ public class ReadRecord {
 	private String SKU;
 	
 	public ReadRecord(String dbName, String uname, String pwd, String sku){
-		
+		System.out.println("before getting record in ReadRecord DBhelper" );
 		String url = "jdbc:mysql://localhost:3306/" + dbName;
 		this.SKU = sku;
 		
@@ -56,9 +56,14 @@ public class ReadRecord {
 			product.setSku(this.results.getString("sku"));
 			product.setProductType(this.results.getString("productType"));
 			product.setDescription(this.results.getString("description"));
+			product.setImageName(this.results.getString("imageName"));
 			product.setCost(this.results.getDouble("cost"));
 			product.setPrice(this.results.getDouble("price"));
 			product.setQuantity(this.results.getInt("quantity"));
+			
+			System.out.println("after getting record in ReadRecord DBhelper" );
+			System.out.println(this.product);
+			
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

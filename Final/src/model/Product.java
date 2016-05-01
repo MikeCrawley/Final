@@ -12,6 +12,7 @@ public class Product {
 	private String sku;
 	private String productType;
 	private String description;
+	private String imageName;
 	private double cost;
 	private double price;
 	private int quantity;
@@ -23,6 +24,7 @@ public class Product {
 		this.sku = "aaaa111";
 		this.productType = "notype";
 		this.description = "nondescript";
+		this.imageName = "noname";
 		this.cost = 0;
 		this.price = 0;
 		this.quantity = 0;
@@ -38,10 +40,11 @@ public class Product {
 	 * @param price
 	 * @param quantity
 	 */
-	public Product(String sku, String productType, String description, double cost, double price, int quantity) {
+	public Product(String sku, String productType, String description, String imageName, double cost, double price, int quantity) {
 		this.sku = sku;
 		this.productType = productType;
 		this.description = description;
+		this.imageName = imageName;
 		this.cost = cost;
 		this.price = price;
 		this.quantity = quantity;
@@ -160,8 +163,26 @@ public class Product {
 	 */
 	@Override
 	public String toString() {
-		return "Product [sku=" + sku + ", productType=" + productType + ", description=" + description + ", cost=" + cost
+		return "Product [sku=" + sku + ", productType=" + productType + ", description=" + description + ", imageName=" + imageName +", cost=" + cost
 				+ ", price=" + price + ", quantity=" + quantity + "]";
+	}
+
+
+
+	/**
+	 * @return the imageName
+	 */
+	public String getImageName() {
+		return imageName;
+	}
+
+
+
+	/**
+	 * @param imageName the imageName to set
+	 */
+	public void setImageName(String imageName) {
+		this.imageName = imageName;
 	}
 
 }

@@ -92,7 +92,7 @@ public class LoginController extends HttpServlet {
 				session.invalidate();
 				session=request.getSession(true);
 				session.setAttribute("user", user);
-				url="in.jsp";
+				url="/shop";
 			}
 			// user doesn't exist, redirect to previous page and show error
 			else{

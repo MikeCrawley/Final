@@ -9,17 +9,25 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dbhelpers.ReadQuery;
+import dbhelpers.ReadShop;
+
 /**
- * Servlet implementation class AddFormServlet
+ * Servlet implementation class ReadServlet
  */
-@WebServlet(description = "Controller to generate the add a product form", urlPatterns = { "/add" })
-public class AddFormServlet extends HttpServlet {
+@WebServlet(
+		description = "Controller for reading the products table", 
+		urlPatterns = { 
+				"/shop", 
+				"/productlist"
+		})
+public class Shop extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AddFormServlet() {
+    public Shop() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,10 +43,21 @@ public class AddFormServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url = "/addForm.jsp";
+		// Create a ReadQuery helper object
+		ReadShop rs = new ReadShop("final", "root", "Headbanger#1");
+		
+		// Get the html table from the REadQuery object
+		rs.doRead();
+		String table = rs.getHTMLTable();
+		// System.out.println(table); 
+		// pass execution control to read.jsp along with the table
+		request.setAttribute("table", table);
+		request.setAttribute("cartLnQuantity", 1);
+		String url = "/in.jsp";
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 		dispatcher.forward(request, response);
+		
 	}
 
 }

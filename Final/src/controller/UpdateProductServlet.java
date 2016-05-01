@@ -43,13 +43,14 @@ public class UpdateProductServlet extends HttpServlet {
 		
 		
 		String sku = request.getParameter("sku");
+		String imagename = request.getParameter("imagename");
 		String productType = request.getParameter("productType");
 	    String description = request.getParameter("description");
 	    Double cost = Double.parseDouble(request.getParameter("cost"));
 	    Double price = Double.parseDouble(request.getParameter("price"));
 	    int quantity = Integer.parseInt(request.getParameter("quantity"));
 	
-		// set up a book object
+		// set up a product object
 	    Product product = new Product();
 	    product.setSku(sku);
 	    product.setProductType(productType);
@@ -57,6 +58,8 @@ public class UpdateProductServlet extends HttpServlet {
 	    product.setCost(cost);
 	    product.setPrice(price);
 	    product.setQuantity(quantity);
+	    product.setImageName(imagename);
+	    
 	    
 	    
 		// set up an addQuery object

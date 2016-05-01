@@ -12,25 +12,10 @@
 <p>You have successfully logged in, congratulations.<br>
 
 
-${table}
 
-
-
-<p>
 Click <a href="CartServlet">here to view cart</a>
-</p>
-
-<p>
-Click <a href=cart.jsp>here to view cartJSP</a>
-</p>
-
-<p>
-Click <a href="checkout">here to checkout</a>
-</p>
 
 
-
-<p>
 Click <a href="Login?logout=true">here</a> to log back out.
 </p>
 

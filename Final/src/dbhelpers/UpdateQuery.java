@@ -35,7 +35,7 @@ public class UpdateQuery {
 	}
 	
 	public void doUpdate(Product product){
-		String query = "update final.products set productType=?, flavor=?, cost=?, price=?, quantity=? where sku=?";
+		String query = "update final.products set productType=?, description=?, cost=?, price=?, quantity=?, imageName=? where sku=?";
 		
 		try {
 			PreparedStatement ps = connection.prepareStatement(query);
@@ -47,7 +47,8 @@ public class UpdateQuery {
 			ps.setDouble(3, product.getCost());
 			ps.setDouble(4, product.getPrice());
 			ps.setInt(5, product.getQuantity());
-			ps.setString(6, product.getSku());
+			ps.setString(6, product.getImageName());
+			ps.setString(7, product.getSku());
 			
 			ps.executeUpdate();
 			

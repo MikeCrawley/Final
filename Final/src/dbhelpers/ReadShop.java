@@ -18,12 +18,12 @@ import model.Product;
  * @author MikeCrawley
  *
  */
-public class ReadQuery {
+public class ReadShop {
 	
 	private Connection connection;
 	private ResultSet results;
 	
-	public ReadQuery(String dbName, String uname, String pwd){
+	public ReadShop(String dbName, String uname, String pwd){
 		String url = "jdbc:mysql://localhost:3306/" + dbName;
 		
 		// set up the driver
@@ -62,12 +62,9 @@ public class ReadQuery {
 		String table ="";
 		table += "<table border=1>";
 		table += "<tr>";
-		table += "<th>SKU</th>";
 		table += "<th>Product Type</th>";
 		table += "<th>Description</th>";
-		table += "<th>Cost</th>";
 		table += "<th>Price</th>";
-		table += "<th>Quantity</th>";
 		table += "<th>Image</th>";
 		table += "<th>Action</th>";
 		table += "</tr>";
@@ -88,31 +85,24 @@ public class ReadQuery {
 				System.out.println(product.getSku());
 				table +="<tr>";
 				table +="<td>";
-				table += product.getSku();
-				table +="</td>";
-				table +="<td>";
 				table += product.getProductType();
 				table +="</td>";
 				table +="<td>";
 				table += product.getDescription();
 				table +="</td>";
 				table +="<td>";
-				table += product.getCost();
-				table +="</td>";
-				table +="<td>";
 				table += product.getPrice();
-				table +="</td>";
-				table +="<td>";
-				table += product.getQuantity();
 				table +="</td>";
 				table +="<td>";
 				table += product.getImageName();
 				table +="</td>";
 				table +="<td>";
-				   table += "<a href=update?sku=" + product.getSku() + " >update</a> <a href=delete?sku=" + product.getSku() + " >delete</a>";
-				 table +="</td>";
+				table += "<a href=addtocart?sku=" + product.getSku() + ">Add to Cart</a>";
+				table +="</td>";
 				table +="</tr>";
 				
+				
+								
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

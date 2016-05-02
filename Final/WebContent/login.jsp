@@ -32,20 +32,18 @@
 
 </div>
 <div id = "content">
-	<p>Please enter your information</p>
-	<form action="enroll" method="get">
-		<label>Please enter email address:</label>
-		<input type="text" name="email" value="" >
-		<br>
-		<label>Please enter your user name:</label>
-		<input type="text" name="username" value="" ><br>
-		<label>Password:</label>
-		<input type="password" name="password" ><br>
-		<br>
-			${errorMessage}
-		<input type="submit" value="Enroll"  >
+	<form id="loginForm" action="Login" method="POST">
+		<h1>Log In</h1>
+		<p>Please enter your email address</p>
+		<input type="text" name="useremail" placeholder="Username" required><br>
+		<p>Please enter password</p>
+		<input type="password" name="password" placeholder ="Password" required><br>
+		<input type="submit" value="Login"><br>
+		${errorMessage}
+	</form>
 
-</form>
+<p>Please click here to enroll</p>
+<a href=enroll.jsp >Enroll</a>
 </div>
 <div id = "sidebar">
 	<img src="images/Names2.png" style="width:150px;height:300px;">

@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Contact Us</title>
 </head>
 <body>
 
@@ -31,22 +31,7 @@
 	</ul>
 
 </div>
-<div id = "content">
-	<p>Please enter your information</p>
-	<form action="enroll" method="get">
-		<label>Please enter email address:</label>
-		<input type="text" name="email" value="" >
-		<br>
-		<label>Please enter your user name:</label>
-		<input type="text" name="username" value="" ><br>
-		<label>Password:</label>
-		<input type="password" name="password" ><br>
-		<br>
-			${errorMessage}
-		<input type="submit" value="Enroll"  >
-
-</form>
-</div>
+<div id = "content">This will be our Contact Page</div>
 <div id = "sidebar">
 	<img src="images/Names2.png" style="width:150px;height:300px;">
 </div>

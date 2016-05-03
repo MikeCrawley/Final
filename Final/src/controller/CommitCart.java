@@ -51,12 +51,15 @@ public class CommitCart extends HttpServlet {
 		ServletContext sc = getServletContext();
 		String url = "/shop";
         String sku = (String) session.getAttribute("sku");
-        
+        //String trigger = (String) session.getAttribute("trigger");
+        //String quantityString = (String) session.getAttribute("cartLnQuantity");
         String quantityString = request.getParameter("cartLnQuantity");
+        String trigger = request.getParameter("trigger");
         
         System.out.println("****************" );
         System.out.println("after getting to commitcart servlet" );
 		System.out.println(sku);
+		System.out.println(trigger);
 		System.out.println(quantityString);
 		System.out.println("**********************" );
 		
@@ -69,6 +72,8 @@ public class CommitCart extends HttpServlet {
 
             //if the user enters a negative or invalid quantity,
             //the quantity is automatically reset to 1.
+            
+            
             int cartLnQuantity;
             try {
             	cartLnQuantity = Integer.parseInt(quantityString);
@@ -87,20 +92,39 @@ public class CommitCart extends HttpServlet {
     		
     		System.out.println("after getting record in commitcart servlet" );
     		System.out.println(product);
+    		System.out.println(cartLnQuantity);
     		
             Cartln cartln = new Cartln();
             cartln.setProduct(product);
-            cartln.setcartLnQuantity(cartLnQuantity);
+            System.out.println("right before trigger");
+            if (trigger.equals("delete")){
+            	cart.removeItem(cartln);
+            }
+            
+            if (trigger.equals("update")){
+            	cartln.setcartLnQuantity(cartLnQuantity);
+            	
+            }
+            
+            if (trigger.equals("add")){
+            	System.out.println("in trigger add");	
+            
             if (cartLnQuantity > 0) {
                 cart.addItem(cartln);
+                cartln.setcartLnQuantity(cartLnQuantity);
             } else if (cartLnQuantity == 0) {
                 cart.removeItem(cartln);
-            }
-            System.out.println(cartln);
+            }}
+            System.out.println("right after trigger");
+            //System.out.println(cartln);
             System.out.println(cartLnQuantity);
-            System.out.println(product);
+            //System.out.println(product);
+            int checkcartlnquantity = cartln.getcartLnQuantity();
+            System.out.println("****");
+            System.out.println("checkcartlnQuantity");
+            System.out.println(checkcartlnquantity);
             session.setAttribute("cart", cart);
-            request.setAttribute("product", product);
+            // request.setAttribute("product", product);
             url = "/shop";
         
                 

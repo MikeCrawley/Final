@@ -20,6 +20,7 @@
 
 <h1>Add to cart</h1>
 <c:set var="sku" value="${product.sku}" scope="session"  />
+
 <form name=addtocart action=commitcart method=get >
 
     <label>
@@ -51,7 +52,7 @@
    </label>
    <input type=text name=cartLnQuantity value="${cartln.cartLnQuantity}" />
    <br />
-   <input type=submit name=submit value="addtocart" />
+   <input type=submit name=trigger value="add" />
      
 </form>
 <p>

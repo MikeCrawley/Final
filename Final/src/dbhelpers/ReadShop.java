@@ -71,18 +71,17 @@ public class ReadShop {
 		
 		try {
 			while(this.results.next()){
-				System.out.println("1st step");
 				Product product = new Product();
-				System.out.println("product");
+				//System.out.println("product");
 				product.setSku(this.results.getString("sku"));
-				System.out.println("sku");
+				//System.out.println("sku");
 				product.setProductType(this.results.getString("productType"));
 				product.setImageName(this.results.getString("imageName"));
 				product.setDescription(this.results.getString("description"));
 				product.setCost(this.results.getDouble("cost"));
 				product.setPrice(this.results.getDouble("price"));
 				product.setQuantity(this.results.getInt("quantity"));
-				System.out.println(product.getSku());
+				//System.out.println(product.getSku());
 				table +="<tr>";
 				table +="<td>";
 				table += product.getProductType();

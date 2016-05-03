@@ -61,7 +61,7 @@ public class ReadRecord {
 			product.setPrice(this.results.getDouble("price"));
 			product.setQuantity(this.results.getInt("quantity"));
 			
-			System.out.println("after getting record in ReadRecord DBhelper" );
+			//System.out.println("after getting record in ReadRecord DBhelper" );
 			System.out.println(this.product);
 			
 			

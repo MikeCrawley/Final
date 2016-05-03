@@ -37,28 +37,28 @@
         <th></th>
       </tr>
       <c:forEach var="item" items="${cart.items}">
-
-${items.product.sku}
+${cart.items}
+${item.product.sku}
       <tr>
         <td>
-            <form action="" method="post">
-                <input type="hidden" name="productCode" 
-                       value="<c:out value='${item.product.sku}'/>">
-                <input type=text name="quantity" 
-                       value="<c:out value='${item.cartLnQuantity}'/>"  
-                       id="quantity">
-                <input type="submit" value="Update">
+            <form action="commitcart" method="post">
+               <c:set var="sku" value="${item.product.sku}" scope="session"  />
+                <input type="hidden" name="sku" value="<c:out value='${item.product.sku}'/>">
+                <input type=text name="cartLnQuantity" 
+                       value="<c:out value='${item.cartLnQuantity}'/>">
+                <input type="submit" name="trigger" value="update">
             </form>
         </td>
         <td><c:out value='${item.product.description}'/></td>
+        <td><c:out value='${cartln.cartLnQuantity}'/>${item.cartLnQuantity}</td>
         <td>${item.product.price}</td>
         
         <td>
-            <form action="" method="post">
-                <input type="hidden" name="productCode" 
-                       value="<c:out value='${item.product.sku}'/>">
-                <input type="hidden" name="quantity" value="0">
-                <input type="submit" value="Remove Item">
+             ${product.sku}
+            <form action="commitcart" method="post">
+                <c:set var="sku" value="${item.product.sku}" scope="session"  />
+              <input type="hidden" name="sku" value="<c:out value='${item.product.sku}'/>">
+                <input type="submit" name="trigger" value="delete">
             </form>
         </td>
       </tr>

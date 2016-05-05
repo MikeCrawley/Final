@@ -52,7 +52,7 @@ public class Shop extends HttpServlet {
 		// System.out.println(table); 
 		// pass execution control to read.jsp along with the table
 		request.setAttribute("table", table);
-		request.setAttribute("cartLnQuantity", 1);
+		// request.setAttribute("cartLnQuantity", 1);
 		String url = "/in.jsp";
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);

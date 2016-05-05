@@ -102,7 +102,9 @@ public class CommitCart extends HttpServlet {
             }
             
             if (trigger.equals("update")){
-            	cartln.setcartLnQuantity(cartLnQuantity);
+            	cart.removeItem(cartln);
+            	cart.addItem(cartln);
+                cartln.setcartLnQuantity(cartLnQuantity);
             	
             }
             

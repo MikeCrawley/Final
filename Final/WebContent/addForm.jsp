@@ -2,7 +2,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Inventory Management</title>
 </head>
 <body>
 
@@ -79,7 +79,42 @@
 
 </div>
 <div id = "sidebar">
-	<img src="images/Names2.png" style="width:150px;height:300px;">
+	<img src="images/Names2.png" style="width:150px;height:200px;">
+	
+	<div class = "scarfslideshow">
+		<figure>
+			<img src = "slideshow/scarf1.jpg" alt = "The First Scarf"/>
+			<figcaption>"The First Scarf"</figcaption>
+		</figure>
+		<figure>
+			<img src = "slideshow/scarf2.jpg"/>
+			<figcaption>"The Second Scarf</figcaption>
+		</figure>
+		<figure>
+			<img src = "slideshow/scarf3.jpg"/>
+			<figcaption>The Third Scarf</figcaption>
+		</figure>
+		<figure>
+			<img src = "slideshow/scarf4.jpg"/>
+			<figcaption>The Fourth Scarf</figcaption>
+		</figure>
+		<figure>
+			<img src = "slideshow/scarf5.jpg"/>
+			<figcaption>The Fifth Scarf</figcaption>
+		</figure>
+		<figure>
+			<img src = "slideshow/scarf6.jpg"/>
+			<figcaption>The Sixth Scarf</figcaption>
+		</figure>
+		<figure>
+			<img src = "slideshow/scarf7.jpg"/>
+			<figcaption>The Seventh Scarf</figcaption>
+		</figure>
+		<figure>
+			<img src = "slideshow/scarf8.jpg"/>
+			<figcaption>The Eighth Scarf</figcaption>
+		</figure>
+	</div>
 </div>
 <div id = "footer">This is the footer area</div>
 

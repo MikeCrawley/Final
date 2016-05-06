@@ -60,8 +60,8 @@
         <th></th>
       </tr>
       <c:forEach var="item" items="${cart.items}">
-${cart.items}
-${item.product.sku}
+<c:set var="ltotal" value='${item.cartLnQuantity * item.product.price}' />
+<c:set var="gtotal" value='${gtotal + ltotal}' />
       <tr>
         <td>
             <form action="commitcart" method="post">
@@ -73,8 +73,8 @@ ${item.product.sku}
             </form>
         </td>
         <td><c:out value='${item.product.description}'/></td>
-        <td><c:out value='${cartln.cartLnQuantity}'/>${item.cartLnQuantity}</td>
-        <td>${item.product.price}</td>
+        <td>$ ${item.product.price}</td>
+        <td>$ <c:out value='${item.cartLnQuantity * item.product.price}'/></td>
         
         <td>
              ${product.sku}
@@ -87,6 +87,7 @@ ${item.product.sku}
       </tr>
       </c:forEach>
     </table>
+    <h2>Grand total is <c:out value='${gtotal}'/></h2>
 </div>
 <div id = "sidebar">
 	<img src="images/Names2.png" style="width:150px;height:200px;">

@@ -90,10 +90,11 @@ public class ReadShop {
 				table += product.getDescription();
 				table +="</td>";
 				table +="<td>";
+				table += "$";
 				table += product.getPrice();
 				table +="</td>";
 				table +="<td>";
-				table += product.getImageName();
+				table +="<IMG SRC=" + product.getImageName() + " ALT='scarf' WIDTH=64 HEIGHT=64>";
 				table +="</td>";
 				table +="<td>";
 				table += "<a href=addtocart?sku=" + product.getSku() + ">Add to Cart</a>";

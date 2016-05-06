@@ -44,9 +44,11 @@
 <h1>Add to cart</h1>
 <c:set var="sku" value="${product.sku}" scope="session"  />
 
+<img src="${product.imageName}" style="width:150px;height:200px;">
+
 <form name=addtocart action=commitcart method=get >
 
-    <label>
+     <label>
       Product Sku:
    </label>
    ${product.sku}

@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dbhelpers.ReadRecord;
+import dbhelpers.UpdateQuery;
 import model.Cart;
 import model.Cartln;
 import model.Product;
@@ -75,10 +76,13 @@ public class CommitCart extends HttpServlet {
             
             
             int cartLnQuantity;
+            int reqQuantity=0;
             try {
             	cartLnQuantity = Integer.parseInt(quantityString);
+            	reqQuantity = cartLnQuantity;
                 if (cartLnQuantity < 0) {
                 	cartLnQuantity = 1;
+                	
                 }
             } catch (NumberFormatException nfe) {
             	cartLnQuantity = 1;
@@ -86,25 +90,46 @@ public class CommitCart extends HttpServlet {
 
             // String path = sc.getRealPath("/WEB-INF/products.txt");
             ReadRecord rr = new ReadRecord("final", "root", "Headbanger#1", sku);
+            UpdateQuery uq = new UpdateQuery("final", "root", "Headbanger#1");
     		
-    		rr.doRead();
+            rr.doRead();
             Product product = rr.getProduct();
     		
     		System.out.println("after getting record in commitcart servlet" );
     		System.out.println(product);
     		System.out.println(cartLnQuantity);
+    		int PQuantity = product.getQuantity();
+    		int NewAddQuantity = PQuantity - cartLnQuantity;
+    		int NewDelQuantity = PQuantity + cartLnQuantity;
     		
-            Cartln cartln = new Cartln();
+            if (cartLnQuantity < PQuantity) {
+            
+    		
+    		Cartln cartln = new Cartln();
             cartln.setProduct(product);
             System.out.println("right before trigger");
             if (trigger.equals("delete")){
+            	// product.setQuantity(NewDelQuantity);
+            	// uq.doUpdate(product);
             	cart.removeItem(cartln);
             }
             
             if (trigger.equals("update")){
             	cart.removeItem(cartln);
-            	cart.addItem(cartln);
-                cartln.setcartLnQuantity(cartLnQuantity);
+            	// cart.addItem(cartln);
+                // cartln.setcartLnQuantity(cartLnQuantity);
+            	if (cartLnQuantity > 0) {
+            		// product.setQuantity(NewAddQuantity);
+                	// uq.doUpdate(product);
+            		cart.addItem(cartln);
+                    cartln.setcartLnQuantity(cartLnQuantity);
+                } else if (cartLnQuantity == 0) {
+                    cart.removeItem(cartln);
+                    // product.setQuantity(NewDelQuantity);
+                	// uq.doUpdate(product);
+                }
+            	
+            	
             	
             }
             
@@ -128,7 +153,15 @@ public class CommitCart extends HttpServlet {
             session.setAttribute("cart", cart);
             // request.setAttribute("product", product);
             url = "/shop";
-        
+            }
+            else {
+            	url = "/quantityerror.jsp";
+            	session.setAttribute("cart", cart);
+            	session.setAttribute("rquantity", reqQuantity);
+            	System.out.println(reqQuantity);
+            	session.setAttribute("invquantity", PQuantity);
+            }
+            
                 
         sc.getRequestDispatcher(url).forward(request, response);
     

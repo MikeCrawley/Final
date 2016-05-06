@@ -39,13 +39,8 @@
 ${table}
 
 
-
 <p>
-Click <a href="CartServlet">here to view cart</a>
-</p>
-
-<p>
-Click <a href=cart.jsp>here to view cartJSP</a>
+Click <a href=cart.jsp>here to view cart</a>
 </p>
 
 <p>

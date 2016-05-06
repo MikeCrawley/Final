@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Checkout</title>
+<title>Our Products</title>
 </head>
 <body>
 
@@ -31,17 +31,15 @@
 	</ul>
 
 </div>
-<div id = "content">
-<h1>Welcome, ${user.username}!</h1>
-<p>Thanks for shopping with us<br>
+<div id = "content">I'm sorry but we don't have stock to add to this many to the cart
 
+<H3>You entered: ${rquantity}</H3>
+<H3>We only have: ${invquantity}  available</H3>
 
-
-Click <a href="Login?logout=true">here to pay</a>
-
-
-Click <a href="Login?logout=true">here</a> to log back out.
+<p>
+Click <a href=cart.jsp>here to return to cart</a>
 </p>
+<a href="shop" >Please click here to return to shopping</a>
 </div>
 <div id = "sidebar">
 	<img src="images/Names2.png" style="width:150px;height:200px;">
@@ -82,7 +80,6 @@ Click <a href="Login?logout=true">here</a> to log back out.
 	</div>
 </div>
 <div id = "footer">This is the footer area</div>
-
 
 
 </body>

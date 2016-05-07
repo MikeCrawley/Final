@@ -52,18 +52,20 @@
 
 </div>
 <div id = "content">
-	<form id="loginForm" action="Login" method="POST">
-		<h1>Log In</h1>
-		<p>Please enter your email address</p>
-		<input type="text" name="useremail" placeholder="Username" required><br>
-		<p>Please enter password</p>
-		<input type="password" name="password" placeholder ="Password" required><br>
-		<input type="submit" value="Login"><br>
-		${errorMessage}
-	</form>
+	<p>
+		"After I bought my wife a scarf from Mike and Ryan's website she gave me four kids!"
+		<br> - Scott from Montana
+	</p>
+	<img class = "testimony" alt="Woman in Field" src="images/girlinfield.jpg">
+	<p> "After years of trying to find a husband my life changed just 2 weeks after wearing
+		a scarf that I got from this website!"
+		<br> - Melissa from Maine
+	</p>
+	<p>
+		"If you are going to be a Queen you have to dress like a Queen, it's that simple."
+		<br> - Queen Elizabeth, England
+	</p>
 
-<p>Please click here to enroll</p>
-<a href=enroll.jsp >Enroll</a>
 </div>
 <div id = "sidebar">
 	

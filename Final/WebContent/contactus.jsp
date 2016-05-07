@@ -5,18 +5,37 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Contact Us</title>
+<title>Home Page</title>
 </head>
 <body>
 
 <div id = "header">
-	<h1>Crawley and Daley's 
-	<br>World Class Scarves</h1>
-
-	<ul>
-		<li><a href="login.jsp">Login</a></li>
-		<li><a href="enroll.jsp">Enroll</a></li>
-	</ul>
+	<div id = "headerimages">
+		<img src = "headerimages/HScarf.png">
+	
+	</div>
+	
+	<div id = "headertext">
+		<h1>Mike Crawley and Ryan Daley's World Class Scarves</h1>
+	</div>
+	
+	<div id = "headerlinks">
+		<ul>
+			<li>
+				<a href="enroll.jsp" class = "a-hbutton">
+					<span class = "a-hbutton-text">Enroll</span>
+					<span class = "a-hbutton-slide-text">Free!</span>
+					<span class = "a-hbutton-icon-right"><span></span></span>
+				</a>
+			</li>
+			<li><a href="login.jsp" class = "a-hbutton">
+					<span class = "a-hbutton-text">Login</span>
+					<span class = "a-hbutton-slide-text">Shop!</span>
+					<span class = "a-hbutton-icon-right"><span></span></span>
+				</a>
+		</ul>
+	
+	</div>
 
 </div>
 
@@ -26,51 +45,85 @@
 		<li><a href="products.jsp">Products</a></li>
 		<li><a href="aboutus.jsp">About Us</a></li>
 		<li><a href="contactus.jsp">Contact Us</a></li>
+		<li><a href="testimony.jsp">Testimonials</a></li>
 		
 		
 	</ul>
 
 </div>
-<div id = "content">This will be our Contact Page</div>
+<div id = "content">
+	<img class = "contactus" alt="The Phone" src="images/phone3.png">
+	<p>
+		Have any questions or comments? 
+	</p>
+	<p> The best way to get a hold of us is by email:
+	</p>
+	<p>
+		scarf@worldsbestscarves.com
+	</p>
+	<p>
+		But you can always call us at 1.800.55.SCARF
+	</p>
+</div>
 <div id = "sidebar">
-	<img src="images/Names2.png" style="width:150px;height:200px;">
+	
 	
 	<div class = "scarfslideshow">
 		<figure>
 			<img src = "slideshow/scarf1.jpg" alt = "The First Scarf"/>
-			<figcaption>"The First Scarf"</figcaption>
+			<figcaption>Lightweight Aqua</figcaption>
 		</figure>
 		<figure>
 			<img src = "slideshow/scarf2.jpg"/>
-			<figcaption>"The Second Scarf</figcaption>
+			<figcaption>Quilted Pattern</figcaption>
 		</figure>
 		<figure>
 			<img src = "slideshow/scarf3.jpg"/>
-			<figcaption>The Third Scarf</figcaption>
+			<figcaption>Grey Taupe Stripe</figcaption>
 		</figure>
 		<figure>
 			<img src = "slideshow/scarf4.jpg"/>
-			<figcaption>The Fourth Scarf</figcaption>
+			<figcaption>Black White Chevron</figcaption>
 		</figure>
 		<figure>
 			<img src = "slideshow/scarf5.jpg"/>
-			<figcaption>The Fifth Scarf</figcaption>
+			<figcaption>Red Black Stripe</figcaption>
 		</figure>
 		<figure>
 			<img src = "slideshow/scarf6.jpg"/>
-			<figcaption>The Sixth Scarf</figcaption>
+			<figcaption>Grey Black Love</figcaption>
 		</figure>
 		<figure>
 			<img src = "slideshow/scarf7.jpg"/>
-			<figcaption>The Seventh Scarf</figcaption>
+			<figcaption>Sheer Sequins</figcaption>
 		</figure>
 		<figure>
 			<img src = "slideshow/scarf8.jpg"/>
-			<figcaption>The Eighth Scarf</figcaption>
+			<figcaption>Aqua Quatrefoil</figcaption>
 		</figure>
 	</div>
+	<div class = "bsidebar">
+		<img src="images/Names2.png">
+	</div>
 </div>
-<div id = "footer">This is the footer area</div>
+<div id = "footer">
+	<div id = "footertext">
+	<h5>Copyright (c) 2016 Mike and Ryan's Scarfs LLC.
+	<br>This website is protected by copyright under UGA Law. Theft of any kind will result in a fine up to 20 Million Dollars.</h5>
+	</div>
+	
+	<div id = "footerimages">
+		<a href = "https://www.facebook.com" target = "_blank">
+			<img src = "footerimages/facebook.png">
+		</a>
+		<a href = "https://www.twitter.com" target = "_blank">
+			<img src = "footerimages/twitter.png" alt = "Check us out on Twitter!">
+		</a>
+		<a href = "https://plus.google.com/" target = "_blank">
+			<img src = "footerimages/google.png">
+		</a>
+	</div>
+</div>
 
 
 </body>

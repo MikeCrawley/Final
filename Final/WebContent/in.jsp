@@ -55,10 +55,7 @@
 <h1>Welcome, ${user.username}!</h1>
 <p>You have successfully logged in, congratulations.<br>
 
-
-${table}
-
-</p>
+<div id ="sidebarrt">
 <p = class = "pstyle">
 <a href=cart.jsp>Click here to view cart</a>
 </p>
@@ -71,6 +68,15 @@ ${table}
 <a href="Login?logout=true">Click here to log back out</a>
 </p>
 </div>
+<div id ="innerbarleft">
+</div>
+${table}
+
+</p>
+
+</div>
+
+
 <div id = "sidebar2">
 	
 	

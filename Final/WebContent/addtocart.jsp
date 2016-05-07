@@ -68,26 +68,26 @@
 <form name=addtocart action=commitcart method=get class = "formstyle" >
 
      <label>
-      Product Sku:
+      Product Sku:${product.sku}
    </label>
-   ${product.sku}
+   
    <br />
  
      <label>
-      Product Type
+      Product Type: ${product.productType}
    </label>
-   ${product.productType}
+   
    <br />
    <label>
-      Product Description:
+      Product Description:${product.description}
    </label>
-   ${product.description}
+  
    <br />
    
    <label>
-      Product Cost:
+      Product Cost:${product.price}
    </label>
-   ${product.price}
+   
    <br />
    
       

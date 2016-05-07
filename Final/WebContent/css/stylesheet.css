@@ -710,6 +710,23 @@ button {
 	box-shadow: 0 0 10px 5px #000;
 }
 
+#sidebarrt {
+	float: right;
+	height: 500px;
+	width: 20%;
+	background: linear-gradient(#E0EEEE, #2F4F4F);
+	background: -moz-linear-gradient(#E0EEEE, #2F4F4F);
+	background: -ms-linear-gradient(#E0EEEE, #2F4F4F);
+	background: -o-linear-gradient(#E0EEEE, #2F4F4F);
+	border-style:none;
+	
+}
+#innerbarleft {
+	float: left;
+	height: 500px;
+	width: 7%;
+	border-style:none;	
+}
 #sidebar2 {
 	float: left;
 	width: 20%;

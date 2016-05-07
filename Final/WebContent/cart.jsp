@@ -12,7 +12,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Cart</title>
 </head>
 <body>
 
@@ -58,15 +58,13 @@
 	</ul>
 
 </div>
-<div id = "content">
+<div id = "content2">
 <h1>Cart</h1>
 <br/>
-
+<p class = "pstyle">
+<a href="shop">Return to Shopping</a> 
 <br />
-
-<a href="shop">return to shopping</a> 
-<br />
-
+</p>
 <table>
       <tr>
         <th>Quantity</th>
@@ -80,12 +78,12 @@
 <c:set var="gtotal" value='${gtotal + ltotal}' />
       <tr>
         <td>
-            <form action="commitcart" method="post">
+            <form action="commitcart" method="post" class = "formstyle">
                <c:set var="sku" value="${item.product.sku}" scope="session"  />
                 <input type="hidden" name="sku" value="<c:out value='${item.product.sku}'/>">
                 <input type=text name="cartLnQuantity" 
                        value="<c:out value='${item.cartLnQuantity}'/>">
-                <input type="submit" name="trigger" value="update">
+                <input type="submit" name="trigger" value="update" class = "formbutton">
             </form>
         </td>
         <td><c:out value='${item.product.description}'/></td>
@@ -94,10 +92,10 @@
         
         <td>
              ${product.sku}
-            <form action="commitcart" method="post">
+            <form action="commitcart" method="post" class = "formstyle">
                 <c:set var="sku" value="${item.product.sku}" scope="session"  />
               <input type="hidden" name="sku" value="<c:out value='${item.product.sku}'/>">
-                <input type="submit" name="trigger" value="delete">
+                <input type="submit" name="trigger" value="delete" class = "formbutton">
             </form>
         </td>
       </tr>
@@ -105,7 +103,7 @@
     </table>
     <h2>Grand total is <c:out value='${gtotal}'/></h2>
 </div>
-<div id = "sidebar">
+<div id = "sidebar2">
 	
 	
 	<div class = "scarfslideshow">

@@ -7,14 +7,12 @@
     
 <% Product product = (Product) request.getAttribute("product"); %>    
 
-    
-    
 <!DOCTYPE html>
 <html>
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Add to Cart</title>
 </head>
 <body>
 
@@ -60,14 +58,14 @@
 	</ul>
 
 </div>
-<div id = "content">
+<div id = "content2">
 
 <h1>Add to cart</h1>
 <c:set var="sku" value="${product.sku}" scope="session"  />
 
-<img src="${product.imageName}" style="width:150px;height:200px;">
+<img src="${product.imageName}" style="width:150px;height:200px;" class = "imgstyle">
 
-<form name=addtocart action=commitcart method=get >
+<form name=addtocart action=commitcart method=get class = "formstyle" >
 
      <label>
       Product Sku:
@@ -98,14 +96,14 @@
    </label>
    <input type=text name=cartLnQuantity value="${cartln.cartLnQuantity}" />
    <br />
-   <input type=submit name=trigger value="add" />
+   <input type=submit name=trigger value="Add" class = "formbutton"/>
      
 </form>
-<p>
-  <a href="shop">return to shopping</a>
+<p class = "pstyle">
+  <a href="shop">Return to Shopping</a>
 </p>
 </div>
-<div id = "sidebar">
+<div id = "sidebar2">
 	
 	
 	<div class = "scarfslideshow">

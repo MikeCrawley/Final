@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Update Form</title>
 </head>
 <body>
 
@@ -51,11 +51,11 @@
 	</ul>
 
 </div>
-<div id = "content">
+<div id = "content2">
 <h1>Inventory - Update a product</h1>
 
 <img alt="" src="images/in.jpg">
-<form name=updateForm action=updateProduct method=get >
+<form name=updateForm action=updateProduct method=get class = "formstyle" >
 
     <label>
       Product Sku:
@@ -97,15 +97,15 @@
    </label>
    <input type=text name=quantity value="${product.quantity}" />
    <br />
-   <input type=submit name=submit value="Update the Product" />
+   <input type=submit name=submit value="Update the Product" class = "formbutton"/>
      
 </form>
-<p>
+<p class = "pstyle">
   <a href="read">Exit without updating</a>
 </p>
 
 </div>
-<div id = "sidebar">
+<div id = "sidebar2">
 	
 	
 	<div class = "scarfslideshow">

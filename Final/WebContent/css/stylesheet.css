@@ -378,10 +378,342 @@ button {
 	margin-right: 10px;
 }
 
+#content .formstyle {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    background:#EEBA4C;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(#EEBA4C,0),color-stop(#FDEDD0,1));
+    background:-webkit-linear-gradient(top, #EEBA4C 0%, #FDEDD0 100%);
+    background:-moz-linear-gradient(top, #FDEDD0 0%, #6f97c5 100%);
+    background:-o-linear-gradient(top, #FDEDD0 0%, #6f97c5 100%);
+    background:linear-gradient(top, #FDEDD0 0%, #6f97c5 100%);
+    padding: 20px 30px 20px 30px;
+    margin-top: 20px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #D3D3D3;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+#content .formstyle h1 {
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #444;
+    margin: -10px -30px 30px -30px;
+}
+
+#content .formstyle p {
+	display: block;
+    font-size: 20px;
+}
+
+#content .formstyle label {
+	display: block;
+    margin: 0px 0px 5px;
+    color: #3D2117;
+    height: 25px;
+    line-height:15px;
+    font-size: 20px;
+}
+
+#content .formstyle input {
+    border: none;
+    color: #525252;
+    height: 25px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    background: #DFDFDF;
+}
+
+#content .formbutton {
+    background: #FFCC02;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #585858;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 1px 1px 1px #FFE477;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #3D3D3D;
+    -webkit-box-shadow:1px 1px 1px #3D3D3D;
+    -moz-box-shadow:1px 1px 1px #3D3D3D;
+}
+
+#content .formbutton:hover {
+    color: #333;
+    background-color: #EBEBEB;
+}
+
+#content .formbutton:active {
+	position:relative;
+    top:1px;
+}
+
+#content2 {
+	float: right;
+	height: 1000px;
+	width: 79%;
+	background: linear-gradient(#E0EEEE, #2F4F4F);
+	background: -moz-linear-gradient(#E0EEEE, #2F4F4F);
+	background: -ms-linear-gradient(#E0EEEE, #2F4F4F);
+	background: -o-linear-gradient(#E0EEEE, #2F4F4F);
+	margin-bottom: 1em;
+	box-shadow: 0 0 10px 5px #000;
+}
+
+#content2 img {
+	display: block;
+	margin: 0 auto;
+}
+
+.imgstyle {
+	display: block;
+	margin: 0 auto;
+}
+
+#content2 p {
+	color: #3D2117;
+	font-size: 30px;
+	padding: 10px;
+}
+
+#content2 .home {
+	position: relative;
+	float: right;
+	width: 480px;
+	height: 207px;
+	padding: 7px;
+	margin-right: 10px;
+}
+
+#content2 .products {
+	position: relative;
+	float: left;
+	width: 384px;
+	height: 256px;
+	padding: 7px;
+	margin-right: 10px;
+}
+
+#content2 .aboutus {
+	position: relative;
+	float: right;
+	width: 403px;
+	height: 268px;
+	padding: 5px;
+}
+
+#content2 .p {
+	border-style: none;
+}
+
+#content2 .p p {
+	color: #3D2117;
+	font-size: 20px;
+	padding: 10px;
+}
+
+#content2 .contactus {
+	position: relative;
+	float: right;
+	width: 336px;
+	height: 448px;
+	padding: 7px;
+	margin-right: 10px;
+}
+
+#content2 .testimony {
+	position: relative;
+	float: right;
+	width: 384px;
+	height: 255px;
+	padding: 7px;
+	margin-right: 10px;
+}
+
+#content2 .formstyle {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    background:#EEBA4C;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(#EEBA4C,0),color-stop(#FDEDD0,1));
+    background:-webkit-linear-gradient(top, #EEBA4C 0%, #FDEDD0 100%);
+    background:-moz-linear-gradient(top, #FDEDD0 0%, #6f97c5 100%);
+    background:-o-linear-gradient(top, #FDEDD0 0%, #6f97c5 100%);
+    background:linear-gradient(top, #FDEDD0 0%, #6f97c5 100%);
+    padding: 20px 30px 20px 30px;
+    margin-top: 20px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #D3D3D3;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+#content2 .formstyle h1 {
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #444;
+    margin: -10px -30px 30px -30px;
+}
+
+#content2 .formstyle p {
+	display: block;
+    font-size: 20px;
+}
+
+#content2 .formstyle label {
+	display: block;
+    margin: 0px 0px 5px;
+    color: #3D2117;
+    height: 25px;
+    line-height:15px;
+    font-size: 20px;
+}
+
+#content2 .formstyle input {
+    border: none;
+    color: #525252;
+    height: 25px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    background: #DFDFDF;
+}
+
+#content2 .formbutton {
+    background: #FFCC02;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #585858;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 1px 1px 1px #FFE477;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #3D3D3D;
+    -webkit-box-shadow:1px 1px 1px #3D3D3D;
+    -moz-box-shadow:1px 1px 1px #3D3D3D;
+}
+
+#content2 .formbutton:hover {
+    color: #333;
+    background-color: #EBEBEB;
+}
+
+#content2 .formbutton:active {
+	position:relative;
+    top:1px;
+}
+
+#content .pstyle {
+	display: block;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#content .pstyle h3 {
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #444;
+    margin: -10px -30px 30px -30px;
+    text-align: center;
+}
+
+#content .pstyle a {
+	background: #FDEDD0;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #585858;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 1px 1px 1px #FFE477;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #3D3D3D;
+    -webkit-box-shadow:1px 1px 1px #3D3D3D;
+    -moz-box-shadow:1px 1px 1px #3D3D3D;
+}
+#content .pstyle a:hover {
+    color: #333;
+    background-color: #EBEBEB;
+}
+
+#content .pstyle a:active {
+	position:relative;
+    top:1px;
+}
+
+#content2 .pstyle {
+	display: block;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+#content2 .pstyle a {
+	background: #FDEDD0;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #585858;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 1px 1px 1px #FFE477;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #3D3D3D;
+    -webkit-box-shadow:1px 1px 1px #3D3D3D;
+    -moz-box-shadow:1px 1px 1px #3D3D3D;
+}
+#content2 .pstyle a:hover {
+    color: #333;
+    background-color: #EBEBEB;
+}
+
+#content2 .pstyle a:active {
+	position:relative;
+    top:1px;
+}
+
 #sidebar {
 	float: left;
 	height: 500px;
 	width: 20%;
+	background: linear-gradient(#E0EEEE, #2F4F4F);
+	background: -moz-linear-gradient(#E0EEEE, #2F4F4F);
+	background: -ms-linear-gradient(#E0EEEE, #2F4F4F);
+	background: -o-linear-gradient(#E0EEEE, #2F4F4F);
+	margin-bottom: 1em;
+	box-shadow: 0 0 10px 5px #000;
+}
+
+#sidebar2 {
+	float: left;
+	width: 20%;
+	height: 1000px;
 	background: linear-gradient(#E0EEEE, #2F4F4F);
 	background: -moz-linear-gradient(#E0EEEE, #2F4F4F);
 	background: -ms-linear-gradient(#E0EEEE, #2F4F4F);
@@ -395,8 +727,14 @@ button {
 	height: 100px;
 	width: 120px;
 	border-style: none;
+	position: fixed;
 
 }
+
+table, th, td {
+   border: 1px solid black;
+}
+
 
 .bsidebar img {
 	width:150px;
@@ -404,11 +742,15 @@ button {
 	margin-top: -3em;
 	margin-right: 1em;
 	margin-left: 1em;
+	position: fixed;
+	border-style: none;
 }
 
 .scarfslideshow img {
 	width: 171px;
 	height: 228px;
+	position: fixed;
+	border-style: none;
 }
 
 .scarfslideshow{
@@ -416,6 +758,7 @@ button {
   max-width: 171px;
   height: 228px;
   margin: 2em auto 5em auto;
+  border-style: none;
 }
 .scarfslideshow figure{
   position: absolute;
@@ -423,11 +766,12 @@ button {
   max-width: 171px;
   height: 228px;
   background: #000;
-  
+  border-style: none;  
   
 }
 .scarfslideshow img{
   box-shadow: 0 0 2px #666;
+  border-style: none;
 }
 .scarfslideshow figcaption{
   position: absolute;
@@ -531,10 +875,7 @@ figure:nth-child(8) {
 	height: 32px;
 	border-style: none;
 }
-form {
-    display: inline-block;
-    text-align: center;
-}
+
 
 
 

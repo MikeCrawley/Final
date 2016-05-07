@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Checkout</title>
 </head>
 <body>
 
@@ -53,11 +53,7 @@
 </div>
 <div id = "content">
 <h1>Welcome, ${user.username}!</h1>
-<p>Thanks for shopping with us<br>
-
-
-
-
+<p class = "pstyle">Thanks for shopping with us,<br><br>
 
 
 Click <a href="Login?logout=true">here</a> to login and continue shopping.

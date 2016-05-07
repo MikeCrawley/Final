@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Read</title>
 </head>
 <body>
 
@@ -51,17 +51,20 @@
 	</ul>
 
 </div>
-<div id = "content">
-<img alt="" src="images/in.jpg">
+<div id = "content2">
+
+<h1>Inventory</h1>
 <br/>
-<h1>inventory</h1>
-<br/>
+<img alt="" src="images/in.jpg" class = "imgstyle">
+<br>
 ${table}
 <br />
+<p class = "pstyle">
 <a href="add">Add an item to the shop</a>
 <br />
+</p>
 </div>
-<div id = "sidebar">
+<div id = "sidebar2">
 	
 	
 	<div class = "scarfslideshow">

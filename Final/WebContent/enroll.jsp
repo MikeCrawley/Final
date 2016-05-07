@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Enroll</title>
 </head>
 <body>
 
@@ -52,8 +52,8 @@
 
 </div>
 <div id = "content">
-	<p>Please enter your information</p>
-	<form action="enroll" method="get">
+	<p class = "pstyle">Please enter your information</p>
+	<form action="enroll" method="get" class = "formstyle">
 		<label>Please enter email address:</label>
 		<input type="text" name="email" value="" >
 		<br>
@@ -63,7 +63,7 @@
 		<input type="password" name="password" ><br>
 		<br>
 			${errorMessage}
-		<input type="submit" value="Enroll"  >
+		<input type="submit" value="Enroll" class = "formbutton">
 
 </form>
 </div>

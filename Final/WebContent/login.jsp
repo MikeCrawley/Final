@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Login</title>
 </head>
 <body>
 
@@ -52,18 +52,19 @@
 
 </div>
 <div id = "content">
-	<form id="loginForm" action="Login" method="POST">
+	<form id="loginForm" action="Login" method="POST" class = "formstyle">
 		<h1>Log In</h1>
 		<p>Please enter your email address</p>
 		<input type="text" name="useremail" placeholder="Username" required><br>
 		<p>Please enter password</p>
 		<input type="password" name="password" placeholder ="Password" required><br>
-		<input type="submit" value="Login"><br>
+		<input type="submit" value="Login" class = "formbutton"><br>
 		${errorMessage}
 	</form>
 
-<p>Please click here to enroll</p>
+<p class = "pstyle">Please click here to enroll
 <a href=enroll.jsp >Enroll</a>
+</p>
 </div>
 <div id = "sidebar">
 	

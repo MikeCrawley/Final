@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Inventory</title>
 </head>
 <body>
 
@@ -52,12 +52,14 @@
 
 </div>
 <div id = "content">
+<img alt="" src="images/in.jpg" class = "imgstyle">
+
 <h1>Store Inventory System.  </h1>
 
-<p>
+<p class = "pstyle">
   <a href="read">Click here to begin</a>
 </p>
-<img alt="" src="images/in.jpg" id="centerframe">
+
 </div>
 <div id = "sidebar">
 	

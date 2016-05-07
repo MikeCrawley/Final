@@ -11,7 +11,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Cartold</title>
 </head>
 <body>
 
@@ -57,13 +57,15 @@
 	</ul>
 
 </div>
-<div id = "content">
+<div id = "content2">
 <h1>Cart</h1>
 <br/>
 ${cart}
 <br />
+<p class = "pstyle">
 <a href=in.jsp>Return to Shopping</a> 
 <br />
+</p>
 
 <table>
       <tr>
@@ -77,24 +79,24 @@ ${cart}
 
       <tr>
         <td>
-            <form action="" method="post">
+            <form action="" method="post" class = "formstyle">
                 <input type="hidden" name="productCode" 
                        value="<c:out value='${item.product.sku}'/>">
                 <input type=text name="quantity" 
                        value="<c:out value='${item.cartLnQuantity}'/>"  
                        id="quantity">
-                <input type="submit" value="Update">
+                <input type="submit" value="Update" class = "formbutton">
             </form>
         </td>
         <td><c:out value='${item.product.description}'/></td>
         <td>${item.product.price}</td>
         
         <td>
-            <form action="" method="post">
+            <form action="" method="post" class = "formstyle">
                 <input type="hidden" name="productCode" 
                        value="<c:out value='${item.product.sku}'/>">
                 <input type="hidden" name="quantity" value="0">
-                <input type="submit" value="Remove Item">
+                <input type="submit" value="Remove Item" class = "formbutton">
             </form>
         </td>
       </tr>
@@ -104,17 +106,17 @@ ${cart}
     <p><b>To change the quantity</b>, enter the new quantity 
         and click on the Update button.</p>
 
-    <form action="" method="post">
+    <form action="" method="post" class = "formstyle">
         <input type="hidden" name="change" value="shop">
-        <input type="submit" value="Continue Shopping">
+        <input type="submit" value="Continue Shopping" class = "formbutton">
     </form>
 
-    <form action="" method="post">
+    <form action="" method="post" class = "formstyle">
         <input type="hidden" name="change" value="checkout">
-        <input type="submit" value="Checkout">
+        <input type="submit" value="Checkout" class = "formbutton">
     </form>
 </div>
-<div id = "sidebar">
+<div id = "sidebar2">
 	
 	
 	<div class = "scarfslideshow">

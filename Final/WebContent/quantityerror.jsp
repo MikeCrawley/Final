@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Quantity Error</title>
 </head>
 <body>
 
@@ -51,16 +51,21 @@
 	</ul>
 
 </div>
-<div id = "content">I'm sorry but we don't have stock to add to this many to the cart
+<div id = "content">
 
-<H3>You entered: ${rquantity}</H3>
+<p class = "pstyle">I'm sorry, but we don't have stock to add to this many to the cart</p>
+
+<h3>You entered: ${rquantity}</h3>
 <H3>We only have: ${invquantity}  available</H3>
 
-<p>
-Click <a href=cart.jsp>here to return to cart</a>
+<p class = "pstyle">
+<a href=cart.jsp>Click here to return to cart</a>
 </p>
+<p class = "pstyle">
 <a href="shop" >Please click here to return to shopping</a>
+</p>
 </div>
+
 <div id = "sidebar">
 	
 	

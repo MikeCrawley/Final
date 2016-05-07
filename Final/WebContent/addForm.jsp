@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>Add Form</title>
 </head>
 <body>
 
@@ -51,11 +51,11 @@
 	</ul>
 
 </div>
-<div id = "content">
-<img alt="" src="images/in.jpg">
+<div id = "content2">
+<img alt="" src="images/in.jpg" class = "imgstyle">
 <h1>Inventory Management - Add a Product</h1>
 
-<form name=addForm action=addProduct method=get >
+<form name=addForm action=addProduct method=get class = "formstyle" >
 
    <label>
       Product SKU
@@ -95,12 +95,12 @@
    </label>
    <input type=text name=quantity value="" />
    <br />
-   <input type=submit name=submit value="Add the Product" />
+   <input type=submit name=submit value="Add the Product" class = "formbutton"/>
 
 </form>
 
 </div>
-<div id = "sidebar">
+<div id = "sidebar2">
 	
 	
 	<div class = "scarfslideshow">

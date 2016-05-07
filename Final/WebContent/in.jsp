@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>In</title>
 </head>
 <body>
 
@@ -51,29 +51,27 @@
 	</ul>
 
 </div>
-<div id = "content">
+<div id = "content2">
 <h1>Welcome, ${user.username}!</h1>
 <p>You have successfully logged in, congratulations.<br>
 
 
 ${table}
 
-
-<p>
-Click <a href=cart.jsp>here to view cart</a>
+</p>
+<p = class = "pstyle">
+<a href=cart.jsp>Click here to view cart</a>
 </p>
 
-<p>
-Click <a href="checkout.jsp">here to checkout</a>
+<p = class = "pstyle">
+<a href="checkout.jsp">Click here to checkout</a>
 </p>
 
-
-
-<p>
-Click <a href="Login?logout=true">here</a> to log back out.
+<p class = "pstyle">
+<a href="Login?logout=true">Click here to log back out</a>
 </p>
 </div>
-<div id = "sidebar">
+<div id = "sidebar2">
 	
 	
 	<div class = "scarfslideshow">

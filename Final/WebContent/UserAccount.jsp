@@ -5,7 +5,7 @@
 <link href ="css/stylesheet.css" rel = "stylesheet" type = "text/css">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home Page</title>
+<title>User Account</title>
 </head>
 <body>
 
@@ -53,11 +53,8 @@
 </div>
 <div id = "content">
 	<h1>Welcome, ${user.username}!</h1>
-	<p>You have successfully logged in, congratulations.<br>
-		Click 
-		<br>
-		<br>
-		<a href="Login?logout=true">here</a> to log back out.
+	<p>You have successfully logged in, congratulations.</p>
+	<p>	Click <a href="Login?logout=true">here</a> to log back out.
 	</p>
 </div>
 <div id = "sidebar">

@@ -57,10 +57,10 @@
 
 
 
-Click <a href="Login?logout=true">here to pay</a>
 
 
-Click <a href="Login?logout=true">here</a> to log back out.
+
+Click <a href="Login?logout=true">here</a> to login and continue shopping.
 </p>
 </div>
 <div id = "sidebar">

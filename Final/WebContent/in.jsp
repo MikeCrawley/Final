@@ -64,7 +64,7 @@ Click <a href=cart.jsp>here to view cart</a>
 </p>
 
 <p>
-Click <a href="checkout">here to checkout</a>
+Click <a href="checkout.jsp">here to checkout</a>
 </p>
 
 

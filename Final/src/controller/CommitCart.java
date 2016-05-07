@@ -119,8 +119,8 @@ public class CommitCart extends HttpServlet {
             	// cart.addItem(cartln);
                 // cartln.setcartLnQuantity(cartLnQuantity);
             	if (cartLnQuantity > 0) {
-            		// product.setQuantity(NewAddQuantity);
-                	// uq.doUpdate(product);
+            		 product.setQuantity(NewAddQuantity);
+                	 uq.doUpdate(product);
             		cart.addItem(cartln);
                     cartln.setcartLnQuantity(cartLnQuantity);
                 } else if (cartLnQuantity == 0) {
@@ -139,6 +139,8 @@ public class CommitCart extends HttpServlet {
             if (cartLnQuantity > 0) {
                 cart.addItem(cartln);
                 cartln.setcartLnQuantity(cartLnQuantity);
+                product.setQuantity(NewAddQuantity);
+           	    uq.doUpdate(product);
             } else if (cartLnQuantity == 0) {
                 cart.removeItem(cartln);
             }}

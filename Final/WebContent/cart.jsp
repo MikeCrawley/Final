@@ -65,7 +65,7 @@
 <a href="shop">Return to Shopping</a> 
 <br />
 </p>
-<table>
+<table class = "table2">
       <tr>
         <th>Quantity</th>
         <th>Description</th>
@@ -78,7 +78,7 @@
 <c:set var="gtotal" value='${gtotal + ltotal}' />
       <tr>
         <td>
-            <form action="commitcart" method="post" class = "formstyle">
+            <form action="commitcart" method="post">
                <c:set var="sku" value="${item.product.sku}" scope="session"  />
                 <input type="hidden" name="sku" value="<c:out value='${item.product.sku}'/>">
                 <input type=text name="cartLnQuantity" 
@@ -92,7 +92,7 @@
         
         <td>
              ${product.sku}
-            <form action="commitcart" method="post" class = "formstyle">
+            <form action="commitcart" method="post">
                 <c:set var="sku" value="${item.product.sku}" scope="session"  />
               <input type="hidden" name="sku" value="<c:out value='${item.product.sku}'/>">
                 <input type="submit" name="trigger" value="delete" class = "formbutton">
@@ -101,7 +101,7 @@
       </tr>
       </c:forEach>
     </table>
-    <h2>Grand total is <c:out value='${gtotal}'/></h2>
+    <h2>Grand total is $<c:out value='${gtotal}'/></h2>
 </div>
 <div id = "sidebar2">
 	

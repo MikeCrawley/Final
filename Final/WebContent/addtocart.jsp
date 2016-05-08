@@ -96,7 +96,7 @@
    </label>
    <input type=text name=cartLnQuantity value="${cartln.cartLnQuantity}" />
    <br />
-   <input type=submit name=trigger value="Add" class = "formbutton"/>
+   <input type=submit name=trigger value="add" class = "formbutton"/>
      
 </form>
 <p class = "pstyle">
